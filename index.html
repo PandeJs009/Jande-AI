@@ -1,0 +1,217 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jande AI</title>
+    <link rel="icon" href="/LOGO-01.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#202123] text-white min-h-screen flex flex-col">
+    <header
+      class="flex items-center justify-between px-4 py-3 border-b border-gray-700"
+    >
+      <div
+        class="flex items-center space-x-2 text-gray-300 text-sm font-semibold cursor-pointer select-none"
+      >
+        <i class="fas fa-pen-nib text-lg"></i>
+        <span>Jande AI</span>
+        <i class="fas fa-chevron-down text-xs"></i>
+      </div>
+      <div class="flex space-x-3">
+        <button
+          class="bg-white text-black rounded-full px-4 py-1 text-sm font-semibold hover:bg-gray-200 transition"
+        >
+          Log in
+        </button>
+        <button
+          class="border border-gray-500 rounded-full px-4 py-1 text-sm font-semibold hover:border-white transition"
+        >
+          Sign up
+        </button>
+      </div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-4">
+      <h1 class="text-white text-xl font-semibold mb-6">
+        What can I help with?
+      </h1>
+
+      <section
+        class="bg-[#2a2b32] rounded-xl w-full max-w-3xl p-4 space-y-4"
+        aria-label="Ask anything input section"
+      >
+        <label
+          for="ask-input"
+          class="block text-gray-400 text-xs mb-1 select-none"
+          >Ask anything</label
+        >
+        <div class="flex items-center space-x-2">
+          <button
+            class="flex items-center space-x-1 border border-gray-600 rounded-full px-3 py-1 text-xs text-gray-300 hover:border-gray-400 transition"
+            type="button"
+          >
+            <i class="fas fa-paperclip text-xs"></i>
+            <span>Attach</span>
+          </button>
+          <button
+            class="flex items-center space-x-1 border border-gray-600 rounded-full px-3 py-1 text-xs text-gray-300 hover:border-gray-400 transition"
+            type="button"
+          >
+            <i class="fas fa-globe text-xs"></i>
+            <span>Search</span>
+          </button>
+          <button
+            class="flex items-center space-x-1 border border-gray-600 rounded-full px-3 py-1 text-xs text-gray-300 hover:border-gray-400 transition"
+            type="button"
+          >
+            <i class="fas fa-lightbulb text-xs"></i>
+            <span>Reason</span>
+          </button>
+          <div class="flex-grow"></div>
+          <button
+            class="flex items-center space-x-2 bg-white text-black rounded-full px-4 py-1 text-xs font-semibold"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 1v22m6-11a6 6 0 01-12 0 6 6 0 0112 0z"
+              />
+            </svg>
+            <span>Voice</span>
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-3 justify-center sm:justify-start">
+          <button
+            class="flex items-center space-x-2 border border-[#444444] rounded-full px-4 py-1 text-xs text-[#d9a05a] hover:border-[#d9a05a] transition"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-[#d9a05a]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#d9a05a"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12h6m-6 4h6m-6-8h6m-7 8v-8a1 1 0 011-1h4a1 1 0 011 1v8m-6 0h6"
+              />
+            </svg>
+            <span>Summarize text</span>
+          </button>
+          <button
+            class="flex items-center space-x-2 border border-[#444444] rounded-full px-4 py-1 text-xs text-[#4ea8de] hover:border-[#4ea8de] transition"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-[#4ea8de]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#4ea8de"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 14l9-5-9-5-9 5 9 5z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A12.083 12.083 0 0112 20.5a12.083 12.083 0 01-6.825-3.443 12.083 12.083 0 01.665-6.479L12 14z"
+              />
+            </svg>
+            <span>Get advice</span>
+          </button>
+          <button
+            class="flex items-center space-x-2 border border-[#444444] rounded-full px-4 py-1 text-xs text-[#d9a05a] hover:border-[#d9a05a] transition"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-[#d9a05a]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#d9a05a"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8v8m0 0l-3-3m3 3l3-3m-3-5a9 9 0 100 10 9 9 0 000-10z"
+              />
+            </svg>
+            <span>Make a plan</span>
+          </button>
+          <button
+            class="flex items-center space-x-2 border border-[#444444] rounded-full px-4 py-1 text-xs text-[#5a5ad9] hover:border-[#5a5ad9] transition"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-[#5a5ad9]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#5a5ad9"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7h-1a4 4 0 00-8 0H6a6 6 0 0112 0zM12 14v7m-4-4h8"
+              />
+            </svg>
+            <span>Code</span>
+          </button>
+          <button
+            class="flex items-center space-x-2 border border-[#444444] rounded-full px-4 py-1 text-xs text-gray-400 hover:border-gray-300 transition"
+            type="button"
+          >
+            <span>More</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="text-center text-gray-400 text-xs py-3 px-4 border-t border-gray-700 select-none"
+    >
+      By messaging Jande AI, you agree to our
+      <a href="#" class="underline hover:text-white">Terms</a> and have read our
+      <a href="#" class="underline hover:text-white">Privacy Policy</a>.
+    </footer>
+
+    <button
+      aria-label="Help"
+      class="fixed bottom-4 right-4 w-8 h-8 rounded-full bg-[#3e3f45] text-gray-400 hover:text-white flex items-center justify-center text-xs select-none"
+    >
+      ?
+    </button>
+  </body>
+</html>
